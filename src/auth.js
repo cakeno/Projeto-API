@@ -43,13 +43,4 @@ $(document).ready(function () {
           })
   });
 
-
-  $('#logout-btn').click(function() {
-      firebase.auth().signOut().then(function() {
-          window.location = 'index.html'
-        }).catch(function(error) {
-         alert('Ocorreu um erro, tente novamente.')
-        });
-  }) 
-
 });
