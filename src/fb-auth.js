@@ -26,8 +26,6 @@ $(document).ready(function () {
     let provider = new firebase.auth.FacebookAuthProvider();
 
     firebase.auth().signInWithPopup(provider).then(function (result) {
-      var token = result.credential.accessToken;
-      var user = result.user;
 
       window.location = 'home.html';
 
